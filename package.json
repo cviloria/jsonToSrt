@@ -1,0 +1,8 @@
+{
+  "name": "js-unb8tc",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "boostrap": "^2.0.0"
+  }
+}
