@@ -16,7 +16,7 @@
   <div class="container">
      <h1>json To SRT</h1>
      <div class="example">
-       <pre>Formato ejemplo
+       <pre>Formato 1 ejemplo
        [{
           "start_time": "00:00:07,570",
           "end_time": "00:00:12,541",
@@ -25,13 +25,39 @@
           "start_time": "00:00:12,541",
           "end_time": "00:00:16,583",
           "text": "la cantidad de apoyo emocional que el líder otorga al colaborador"
-        }];</pre>
+        }];
+        </pre>
+      <pre>Formato 2 ejemplo
+        [{
+            "label": "En caso de no haber iniciado la visualización del vídeo, siempre haz clic en el botón inferior izquierdo",
+            "ini": "0",
+            "fin": "1"
+          }, {
+            "label": "",
+            "ini": "1",
+            "fin": "5.1"
+          }];
+        </pre>
      </div>
     <div class="row">
       <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            formato 1
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+          <label class="form-check-label" for="exampleRadios2">
+            formato 2
+          </label>
+        </div>       
+      </div>
+      <div class="col-12">
         <label>Json to convert</label>
         </br>
-        <textarea id="to_convert" rows="10"class="form-control"/></textarea>
+        <textarea id="to_convert" rows="10"class="form-control" required/></textarea>
       </div>
       <div class="col-12">
         <label>Result</label>
